@@ -1,13 +1,15 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 
 body {
 	font-size: 1.2em;
 	background-color: #fff;
-	color: #555;
+	color: #000000;
 }
+
 
 p {
 	padding: 0 0 20px 0;
@@ -18,6 +20,8 @@ input[type="text"], input[type="password"], input[type="search"] {
 	color: #5d5d5d;
 	width: 60%;
 	padding: 8px;
+	margin-top: 5px;
+	border: solid 2px #1e0aef;
 }
 
 input, textarea {
@@ -42,7 +46,7 @@ h3 {
 	margin: 0 0 15px 0;
 }
 
-a, a:hover {
+a, a: hover {
 	outline: none;
 	text-decoration: underline;
 	color: #aeb002;
@@ -52,19 +56,17 @@ ul {
 	margin: 2px 0 22px 17px;
 }
 
-ul li {
-	margin: 0 0 6px 0;
-	padding: 0 0 4px 5px;
-	line-height: 1.5 em;
-}
+
+
 
 .header {
 	background-color: darkslateblue;
-	height: 177px;
+	height: 200px;
 	font-size: 0.8em;
 	margin-left: 0px;
 	margin-right: 0px;
 	min-width: 900px;
+	border: solid 10px #030080;
 }
 
 .main, .logo, .menubar, .site_content, .footer{
@@ -96,8 +98,9 @@ ul li {
 }
 
 .menubar {
-	width: 900px;
+	width: 800px;
 	height: 46px;
+	
 }
 
 ul.menu {
@@ -115,9 +118,11 @@ ul.menu li a {
 	font: normal 100% 'trebuchet ms', sans-serif;
 	display: block;
 	height: 20px;
-	padding: 6px 35px 5px 28px;
+	padding: 6px 30px 5px 28px;
 	color: #fff;
 	text-decoration: none;
+	border: solid 2px #2efd10; 
+	
 }
 
 ul.menu li.selected a {
@@ -149,9 +154,9 @@ hr {
 	width: 222px;
 	padding: 5%;
 	margin: 0 0 16px 0;
-	border: solid 1px #f2f2f2;
-	border-radius: 5px;
-	background-color: #f9f9f9;
+	border: solid 1px #ece4e4;
+	border-radius: 10px;
+	background-color: #0a080840;
 }
 	
 
@@ -161,9 +166,6 @@ hr {
 	cursor: pointer;
 }
 
-.sidebar h2 {
-	color: #136cb2;
-}
 
 .lables_passreg_text {
 font-size: 0.7em;
@@ -171,14 +173,62 @@ margin-top: 3%;
 margin-left: 2%;
 }
 
-.sidebar ul {
-	margin: 0;
+.poisk{
+	float: right;
+    width: 222px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #ece4e4;
+    border-radius: 10px;
+    background-color: #0a080840;
 }
 
-.sidebar ul li{
-	list-style-type: none;
-	margin: 0 0 0 0;
+.vhod {
+	float: right;
+    width: 222px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #ece4e4;
+    border-radius: 10px;
+    background-color: #0a080840;
 }
+
+.novosti{
+	float: right;
+    width: 222px;
+    padding: 5%;
+    margin: 0 0 16px 0;
+    border: solid 1px #ece4e4;
+    border-radius: 10px;
+    background-color: #0a080840;
+}
+
+.novosti p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.sidebar a {	
+	color: green;
+	margin: 0;
+	text-decoration: none;
+	text-align: left;
+	margin: 0 0 6px 0;
+	padding: 0 0 4px 5px;
+	list-style: none;
+}
+
+ul {
+	list-style: none;
+}
+
+
+
+.sidebar span {
+	color: green;
+}
+	
 
 .sidebar .rating_sidebar {
 	float: right;
@@ -314,10 +364,13 @@ border-radius: 5px;
 
 .info_film img {
 	float: left;
-	margin-right: 2%;
+	margin-top: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-left: 2%;
 	border-radius: 5px;
-	border: solid 5px #dad7d5;
-	width: 25%
+	border: solid 5px #ff6905;
+	width: 25%;
 }
 
 .button {
@@ -331,7 +384,7 @@ border-radius: 5px;
 	font-size: 0.8em;
 }
 
-.button a{
+.button a {
 	color: white;
 }
 
@@ -362,11 +415,17 @@ td img {
 	width: 100%;
 }
 
+.span {
+	color: green;
+}
+
 table, tr, td {
 	border: 1px solid black;
 	text-align: center;
 	border-spacing: 15px 15px;
 }
+
+
 
 
 .footer {
@@ -385,7 +444,7 @@ table, tr, td {
 	text-decoration: none;
 }
 
-.footer a:hover {
+.footer a: hover {
 	color: #fff;
 	text-decoration: none;
 }
@@ -483,14 +542,9 @@ ul.menu li {
 .info_film {
 	
 	float: none;
-	height: 100%
+	height: 100%;
 }
 	
-
-.info_film img {
-	
-	margin-bottom: 5%;
-}
 
 .button {
 	float: none;
@@ -516,13 +570,13 @@ td {
 
 iframe {
 	width: 90%;
-	height: 100%
+	height: 100%;
 }
 
 .descriptions_film {
 	width: 90%;
 	text-align: left;
-	margin-left: 2%
+	margin-left: 2%;
 }
 
 .descriptions_film img {
@@ -532,12 +586,12 @@ iframe {
 	margin: 0;
 	padding: 0;
 	margin-left: 11%;
-	margin-bottom: 7%
+	margin-bottom: 7%;
 }
 
 .reviews {
 	text-align: left;
-	width: 96%
+	width: 96%;
 }
 
 .send input [type="text"] {
@@ -550,4 +604,3 @@ iframe {
 
 
 
-}
