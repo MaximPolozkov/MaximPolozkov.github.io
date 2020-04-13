@@ -1157,7 +1157,7 @@ and (max-device-width : 568px){
 	.main-content {	
 	    background: #98F5FF;			
 		margin: 0 auto;
-		min-height: 550px;
+		min-height: 620px;
 		height: 100px;
 		padding-bottom: 10px;
 		margin-top: 10px;
@@ -1176,7 +1176,7 @@ and (max-device-width : 568px){
 	}
 
 	.footer {
-		width: 150%;
+		width: 161%;
     	height: 100px;
 		position:absolute;
 		margin: 0 auto;
