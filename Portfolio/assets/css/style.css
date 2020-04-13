@@ -1153,7 +1153,7 @@ and (max-device-width : 568px){
 
 	.main-content {				
 		margin: 0 auto;
-		min-height: 696px;
+		min-height: 655px;
 		height: 100px;
 		padding-bottom: 10px;
 		margin-top: 10px;
