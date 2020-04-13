@@ -1133,7 +1133,8 @@ and (max-device-width : 568px){
 	
 
 	.wrapper {	
-		width: 180%;
+		min-width: 139%;
+		overflow-x: hidden
 			
 		
 	}
@@ -1204,7 +1205,7 @@ and (max-device-width : 568px){
     width: 135px;
     position: absolute;
     right: 0;
-    left: 138%;
+    left: 98%;
     padding: 5px;
     margin-bottom: 10px;
     float: right;
@@ -1281,7 +1282,7 @@ and (max-device-width : 568px){
     transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
     -webkit-transform-origin: bottom center;
     transform-origin: bottom center;
-    z-index: -1
+    
     }
 
 .sait p {
@@ -1354,7 +1355,7 @@ and (max-device-width : 568px){
     color: #fff;
     text-align: center;
     letter-spacing: 6px;
-    z-index: -1;
+    
 }
 
 #verstka p{
@@ -1392,8 +1393,8 @@ color: #232020;
 }
 
 #wrapper ul li {
-    width: 65px;
-    height: 65px;
+    width: 55px;
+    height: 55px;
     line-height: 75px;
     margin: 0 10px;
     text-align: center;
