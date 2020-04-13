@@ -306,11 +306,11 @@ a{
 	cursor:pointer;
 	opacity:0.7;
 	padding-left:24px;
-	font-size:16px;
+	font-size: 16px;
 	text-transform:uppercase;
-	height:20px;
+	height: 20px;
 	float:left;
-	line-height:20px;
+	line-height: 20px;
 }
 .rm_controls a:hover{
 	opacity:1.0;
@@ -1424,6 +1424,16 @@ color: #232020;
     top: 0;
     bottom: 0;
 }
+
+.rm_controls a{
+	cursor:pointer;
+	opacity:0.7;
+	padding-left: 65px;
+	font-size: 16px;
+	text-transform:uppercase;
+	height: 20px;
+	float:left;
+	line-height: 20px;
 }
 
 
