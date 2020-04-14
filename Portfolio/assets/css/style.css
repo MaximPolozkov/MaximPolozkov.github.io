@@ -651,28 +651,7 @@ a{
 /*Кнопки футера*/
 
 
-@media screen and (max-width: 640px){
-  #wrapper {
-      width: 350px;
-  }
-  #wrapper ul li{
-      margin-top: 10px;
-  }
- 
-}
 
-
-@media screen and (max-width: 340px){
-  #wrapper {
-      width: 150px;
-  }
-  #wrapper ul li{
-      margin:15px;
-  }
-  #wrapper ul li.google{
-      margin-left: 15px;
-  }
-}
 
 
 /*Форма регистрации*/
