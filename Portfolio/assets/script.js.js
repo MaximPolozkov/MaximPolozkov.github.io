@@ -11,7 +11,7 @@
  	});
  }
  
-  $(document).ready(main);
+ 
  /*Конец Menu*/
 
 /*Кнопка Слайдер*/
@@ -22,12 +22,7 @@
  });
  /*Конец кнопки*/
 
- /*Кнопка Интернет магазин*/
-$(function(){
-	$('button[name=Notebook_PC]').click(function(){
-		location.href="/libs/Nptebook_PC.php"
-	});
-});
+ 
  
 
  /*Форма регистрации*/
@@ -39,7 +34,9 @@ $(function(){
  function wosh(state){
     document.getElementById('vhod').style.display = state;
     document.getElementById('gyt').style.display = state;
- }     
+ } 
+
+ 
     
     
   
