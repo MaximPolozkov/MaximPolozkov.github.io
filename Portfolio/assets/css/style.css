@@ -8,12 +8,17 @@ body.page-1 {
 	body.page-2{
 		background-color: #f0f0f0;
 	}
+
+	body.page-3{
+		background: rgba(92, 93, 87, 0.73);
+	}
 	input[required] {
 		background-image: url(../img/zvezda.jpg);
     background-repeat: no-repeat;
     background-position-x: right;
 		
 	}
+
 
 
 
@@ -348,23 +353,24 @@ a{
 	
 
 /*Содержание "Верстка"*/
-#verstka h1 {
-	width: 91%;
-    height: 60;
-	padding: 10px;
-	margin: 20px 0 20px 0;
-	font-size:50px;
-	text-transform: uppercase;
-	text-shadow: 5px -6px 10px rgba(232, 247, 6, 0.73);
-	color:#fff;
-	text-align: center;
-	letter-spacing: 6px;
+#svet {
+    width: 23%;
+    height: 45px;
+    padding: 10px;
+    margin: 31px 0 0 0;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 5px -6px 10px rgba(232, 247, 6, 0.73);
+    color: #fff;
+    text-align: center;
+    letter-spacing: 6px;
+    
 	
 }
 
 #verstka p{
 	color: #232020;
-	width: 80%;
+	width: 100%;
     height: 250px;
     text-align: center;
     font-size: 23px;
@@ -374,10 +380,7 @@ a{
     font-weight: bold;
 }
 
-#verstka p:hover {
-	background-color: rgb(245, 236, 236);
 
-}
 /*"Верстка"*/
 
 /*Вы можите заказать*/

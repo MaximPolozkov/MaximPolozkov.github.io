@@ -53,7 +53,7 @@
     position: absolute;
     left: 0%;
     padding: 5px;
-    margin: 110px 0 0 0;
+    margin: 75px 0 0 0;
 }
 
 	/*Кнопка регистрация*/
@@ -122,7 +122,7 @@
 
 .sait p {
     color: #0cfb0c;
-    font-size: 22px;
+    font-size: 20px;
     letter-spacing: 3px;
     font-weight: bold;
     text-shadow: 5px -6px 10px rgba(6, 80, 247, 0.73);
@@ -186,7 +186,7 @@
     border-radius: 10px;
     box-shadow: 0 1px 1px #61de38, 1px 1px 0 #fbfaf9 inset;
     background: rgba(37, 144, 75, 0.65);
-    margin: 5px 70px;
+    margin: 15px 70px;
     transition: box-shadow .2s ease, transform .5s ease, margin-top .2s ease;
     cursor: pointer;
     display: flex;
@@ -210,7 +210,7 @@
 }
 /*Текст верстка*/
 #verstka{
-	margin: 30px 0 0 0;
+	margin: 10px 0 0 0;
 }
 #verstka h1 {
     width: 105%;
@@ -314,10 +314,23 @@ font-awesome.min.css:4
     -moz-osx-font-smoothing: grayscale;
 }
 
+#svet {
+    width: 22%;
+    height: 37px;
+    padding: 10px;
+    margin: 67px 0 0 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-shadow: 5px -6px 10px rgba(232, 247, 6, 0.73);
+    color: #fff;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
 /*Окно регистрации*/
 #window {
     width: 40%;
-    height: 95%;
+    height: 88%
     margin: 0 auto;
     background: rgba(249, 186, 9, 0.42);
     border: 1px solid #fff;
@@ -353,12 +366,12 @@ font-awesome.min.css:4
 
 /*Окно входа*/
 #vhod {
-    width: 305px;
-    height: 501px;
+    width: 37%;
+    height: 450px;
     margin: 0 auto;
     background: rgba(249, 186, 9, 0.42);
     border: 1px solid #fff;
-    border-radius: 15px;
+    border-radius: 13px;
     z-index: 150;
     display: none;
     position: fixed;
@@ -385,12 +398,12 @@ font-awesome.min.css:4
 /*Меню*/
 .menu {
     background: #555 url(../img/menu-bg.jpg) repeat left top;
-    left: -290px;
-    height: 95%;
+    left: -300px;
+    height: 90%;
     position: fixed;
-    width: 285px;
+    width: 240px;
     z-index: 50;
-    margin: -35px 0 0 0;
+    margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
 
@@ -448,6 +461,7 @@ font-awesome.min.css:4
 
 	}
 
+	
 	/*Конец шапки, контент и футер.*/
 
 	/*Муню с право*/
@@ -609,12 +623,12 @@ font-awesome.min.css:4
 
 }
 
-#verstka h1 {
-    width: 60%;
-    height: 30px;
+#svet {
+    width: 36%;
+    height: 36px;
     padding: 10px;
-    margin: 0px 0 20px 34px;
-    font-size: 25px;
+    margin: 31px 0 0 0;
+    font-size: 16px;
     text-transform: uppercase;
     text-shadow: 5px -6px 10px rgba(232, 247, 6, 0.73);
     color: #fff;
@@ -632,10 +646,11 @@ color: #232020;
     letter-spacing: 2px;
     margin: 0 0 0 0;
     padding: 0 0 0 7px;
+    background: none no-repeat center bottom;
 }
 
-#verstka p:hover {
-    background-color: rgb(245, 236, 236);
+.shadow {
+    background-color: rgb(205, 236, 236);
 }
 
 .container {
