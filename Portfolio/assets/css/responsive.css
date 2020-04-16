@@ -51,9 +51,9 @@
 	.reg {
     width: 178px;
     position: absolute;
-    float: right;
+    left: 0%;
     padding: 5px;
-    margin-bottom: 10px;
+    margin: 110px 0 0 0;
 }
 
 	/*Кнопка регистрация*/
@@ -303,7 +303,8 @@
 
 	.wrapper {	
 		min-width: 139%;
-		overflow-x: hidden;		
+		height: 0%;
+			
 	}
 
 	.header {
@@ -370,7 +371,7 @@
     right: 0;
     left: 98%;
     padding: 5px;
-    margin-bottom: 10px;
+    margin: 100px 0 0 0;
     float: right;
 }
 
@@ -502,7 +503,7 @@
 
 .sait {
     text-align: center;
-    margin: 45px 0 0 0;
+    margin: 14px 0 0 0;
     padding: 0 0 0 0;
 
 }
