@@ -297,6 +297,73 @@
     
     color: #4dc247;
 }
+
+/*Окно регистрации*/
+#window {
+    width: 40%;
+    height: 95%;
+    margin: 0 auto;
+    background: rgba(249, 186, 9, 0.42);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+    #gray {
+    background-color: rgba(222, 206, 206, 0.75);
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+    padding: 0px;
+}
+
+.close {
+    margin: 7px 0 0 90%;
+    cursor: pointer;
+    padding: 2px;
+}
+
+/*Окно входа*/
+#vhod {
+    width: 305px;
+    height: 501px;
+    margin: 0 auto;
+    background: rgba(249, 186, 9, 0.42);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    z-index: 150;
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#gyt {
+    background-color: rgba(222, 206, 206, 0.75);
+    opacity: 0.8;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 100;
+    overflow: auto;
+    padding: 15px;
 }
 
 @media only screen and (max-width: 568px){
@@ -570,7 +637,7 @@ color: #232020;
 }
 
 #window {
-    width: 59%;
+    width: 70%;
     height: 62%;
     margin: 40px auto;
     background: rgba(249, 186, 9, 0.42);
