@@ -30,7 +30,7 @@
 	}
 
 	.inner-content {		
-		min-height: 400px;
+		min-height: 215px;
 		width: 94%;
 		height: 100px;
 		margin:0 0 0 0;		
@@ -39,7 +39,7 @@
 
 	.footer {
 		width: 139%;
-    	height: 81px;
+    	height: 145px;
 		position:absolute;
 		margin: 0 0 0 0;
 		left: 0;
@@ -113,9 +113,9 @@
 
 .site_content {
     width: 205px;
-    height: 100px;
+    height: 220px;
     overflow: hidden;
-    margin: 20px auto 0 auto;
+    margin: 0 auto 0 auto;
     left: 0;
     text-align: center;
 }
@@ -210,7 +210,7 @@
 }
 /*Текст верстка*/
 #verstka{
-	margin: 65px 0 0 0;
+	margin: 30px 0 0 0;
 }
 #verstka h1 {
     width: 105%;
@@ -264,6 +264,7 @@
     height: 50px;
     line-height: 0px;
     margin: 0 18px;
+    padding: 0 0 0 0;
     text-align: center;
     cursor: pointer;
     border-radius: 50%;
@@ -274,28 +275,43 @@
 }
 
 .fa-facebook-f:before, .fa-facebook:before {
-
     color: #3b5998;
 }
 
-.fa-twitter:before {
-   
+
+.fa-twitter:before {   
     color: #00aced;
 }
 
-.fa-instagram:before {
-   
+.fa-instagram:before {   
     color: #bc2a8d;
 }
 
-.fa-google:before {
-    
+.fa-google:before {    
     color: #dd4b39;
 }
 
-.fa-whatsapp:before {
-    
+.fa-whatsapp:before {    
     color: #4dc247;
+}
+
+#wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+font-awesome.min.css:4
+.fa-2x {
+    font-size: 2em;
+}
+font-awesome.min.css:4
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /*Окно регистрации*/
@@ -366,6 +382,23 @@
     padding: 15px;
 }
 
+/*Меню*/
+.menu {
+    background: #555 url(../img/menu-bg.jpg) repeat left top;
+    left: -290px;
+    height: 95%;
+    position: fixed;
+    width: 285px;
+    z-index: 50;
+    margin: -35px 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.icon-close {
+    padding: 0 0 0 0;
+    margin: 0 0 0 82%;
+}
+
 @media only screen and (max-width: 568px){
 
 	.wrapper {	
@@ -388,7 +421,7 @@
 
 	.main-content {				
 		margin: 0 auto;
-		min-height: 650px;
+		min-height: 545px;
 		height: 100px;
 		padding-bottom: 10px;
 		margin-top: 10px;
@@ -405,7 +438,7 @@
 
 	.footer {
 		width: 139%;
-    	height: 100px;
+    	height: 149px;
 		position:absolute;
 		margin: 0 0 0 0;
 		left: 0;
@@ -436,16 +469,16 @@
     width: 135px;
     position: absolute;
     right: 0;
-    left: 98%;
+    left: 55%;
     padding: 5px;
-    margin: 100px 0 0 0;
+    margin: 90px 0 0 0;
     float: right;
 }
 
 .reg button {
     width: 113px;
     height: 35px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     background: rgba(9, 243, 27, 0.19);
     padding: 2px 7px;
     cursor: pointer;
@@ -539,7 +572,7 @@
 
 .site_content {
     width: 145px;
-    height: 120px;
+    height: 400px;
     overflow: hidden;
     margin: 15px 0 0 0;
     float: right;
@@ -553,7 +586,7 @@
     border-radius: 15px;
     box-shadow: 0 1px 1px #61de38, 1px 1px 0 #fbfaf9 inset;
     background: rgba(37, 144, 75, 0.65);
-    margin: 20px 45%;
+    margin: 20px 33%;
     transition: box-shadow .2s ease, transform .5s ease, margin-top .2s ease;
     cursor: pointer;
     display: flex;
@@ -663,6 +696,8 @@ color: #232020;
 	line-height: 20px;
 }
 
+/*Кнопки футера*/
+
 .fa-facebook-f:before, .fa-facebook:before {
     content: "\f09a";
     color: #3b5998;
@@ -686,5 +721,28 @@ color: #232020;
 .fa-whatsapp:before {
     content: "\f232";
     color: #4dc247;
+}
+
+/*Боковое меню*/
+.menu {
+    background: #555 url(../img/menu-bg.jpg) repeat left top;
+    left: -280px;
+    height: 81%;
+    position: fixed;
+    width: 255px;
+    z-index: 50;
+    margin: -12px 0 0 0;
+    padding: 0 0 0 0;
+}
+
+    #verstka p {
+    color: #232020;
+    width: 101%;
+    height: 350px;
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 7px;
 }
 }
