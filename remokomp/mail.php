@@ -1,7 +1,7 @@
 <?php
-$name = $_POST['name'];
-$Phone = $_POST['Phone'];
-$text = $_POST['text'];
+$name = $_GET['name'];
+$Phone = $_GET['Phone'];
+$text = $_GET['text'];
 
 $name = htmlspecialchars($name);
 $Phone = htmlspecialchars($Phone);
