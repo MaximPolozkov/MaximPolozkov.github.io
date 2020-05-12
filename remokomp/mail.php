@@ -1,6 +1,4 @@
 <?php
-
-
 $name = $_POST['name'];
 $Phone = $_POST['Phone'];
 $text = $_POST['text'];
@@ -29,5 +27,4 @@ if(mail("pipl82308@gmail.com", "Заявка с сайта", "Имя:".$name.". 
 	$ochibka ="img src='./img/ochibka.png'";
     echo '<center>',$ochibka,'</center>';
 }
-
 ?>
