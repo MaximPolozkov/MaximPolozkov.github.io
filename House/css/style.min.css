@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");
+@import url("http://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
@@ -69,7 +69,7 @@ body {
   height: 840px;
   left: 0px;
   top: 0px;
-  background-image: url("../images/header.png");
+  background-image: url("../images/header.webp");
   background-size: cover;
 }
 .header__position {
@@ -374,7 +374,7 @@ body {
   height: 560px;
   left: 0px;
   top: 0;
-  background-image: url("../images/pros.png");
+  background-image: url("../images/pros.webp");
 }
 .pros__container {
   position: relative;
@@ -511,7 +511,7 @@ body {
   position: relative;
   width: 719px;
   height: 650px;
-  background-image: url("../images/video.png");
+  background-image: url("../images/video.webp");
   margin: 0 auto;
   text-align: center;
 }
@@ -523,7 +523,7 @@ body {
           transform: translateY(-50%);
   width: 100px;
   height: 100px;
-  background-image: url("../images/play.png");
+  background-image: url("../images/play.webp");
   display: inline-block;
 }
 
@@ -726,6 +726,7 @@ body {
   .header {
     width: 100%;
     margin: 0 auto;
+    background-size: 100% 100%;
   }
   .header__logo {
     margin: 0 auto;
@@ -1394,6 +1395,9 @@ body {
   }
 }
 @media only screen and (max-width: 736px) {
+  .header {
+    background-size: 100% 100%;
+  }
   .header__menuli {
     display: none;
   }
@@ -1704,6 +1708,9 @@ body {
   }
 }
 @media only screen and (max-width: 768px) {
+  .header {
+    background-size: 100% 100%;
+  }
   .header__menuli {
     display: none;
   }
@@ -2014,6 +2021,9 @@ body {
   }
 }
 @media only screen and (max-width: 1024px) {
+  .header {
+    background-size: 100% 100%;
+  }
   .header__menuli {
     display: none;
   }
