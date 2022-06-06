@@ -300,6 +300,10 @@ body {
   color: #FFFFFF;
   margin-top: 53px;
 }
+.content__galblog img {
+  width: 80px;
+  height: 80px;
+}
 .content__main {
   position: relative;
   width: 120px;
@@ -350,6 +354,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.content__imgp img {
+  width: 535px;
+  height: 320px;
 }
 .content__textp {
   position: absolute;
@@ -1527,6 +1535,10 @@ body {
   .content__galblog h1 {
     font-size: 16px;
   }
+  .content__galblog img {
+    width: 80px;
+    height: 80px;
+  }
   .content__galblog:not(:last-child) {
     margin-right: 35px;
   }
@@ -1843,6 +1855,10 @@ body {
   .content__galblog:not(:last-child) {
     margin-right: 35px;
   }
+  .content__galblog img {
+    width: 80px;
+    height: 80px;
+  }
   .content__spisok {
     width: 100%;
     height: 1650px;
@@ -2156,9 +2172,13 @@ body {
   .content__galblog:not(:last-child) {
     margin-right: 35px;
   }
+  .content__galblog img {
+    width: 80px;
+    height: 80px;
+  }
   .content__spisok {
     width: 100%;
-    height: 1650px;
+    height: 1555px;
     text-align: center;
   }
   .content__textp {
@@ -2284,7 +2304,7 @@ body {
 
   .footer {
     width: 100%;
-    height: 430px;
+    height: 480px;
   }
   .footer__content {
     -webkit-box-orient: vertical;
