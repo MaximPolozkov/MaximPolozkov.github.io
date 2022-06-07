@@ -43,9 +43,15 @@ body {
   width: 100%;
   height: auto;
   background: #242B33;
-  font-display: swap;
 }
 
+@font-face {
+  font-family: "Post No Bills Jaffna SemiBold";
+  font-family: "Raleway";
+  font-family: "Roboto";
+  src: url(fonts/sairacondensed.woff2) format("woff2");
+  font-display: swap;
+}
 .wrapper {
   min-width: 100%;
   min-height: 100%;
@@ -734,12 +740,12 @@ body {
 @media only screen and (max-width: 470px) {
   .header {
     width: 100%;
-    height: 995px;
+    height: 735px;
     margin: 0 auto;
     background-size: 100% 100%;
   }
   .header__contacts {
-    top: 275px;
+    top: 200px;
   }
   .header__logo {
     margin: 0 auto;
@@ -1098,6 +1104,15 @@ body {
   }
 }
 @media only screen and (max-width: 414px) {
+  .header {
+    height: 735px !important;
+  }
+  .header__contacts {
+    top: 300px !important;
+  }
+  .header__content {
+    top: 109px;
+  }
   .header__menuli {
     display: none;
   }
@@ -1409,7 +1424,24 @@ body {
 }
 @media only screen and (max-width: 736px) {
   .header {
+    height: 355px;
     background-size: 100% 100%;
+  }
+  .header__contacts {
+    top: 70px;
+  }
+  .header__mouse {
+    display: none;
+  }
+  .header__main {
+    height: 145px;
+    top: 60px;
+  }
+  .header__content {
+    height: 70px;
+  }
+  .header__content h1 {
+    font-size: 25px;
   }
   .header__menuli {
     display: none;
