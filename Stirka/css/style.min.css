@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Pacifico&display=swap");
+
 *,
 *::before,
 *::after {
@@ -42,10 +45,12 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
-  background: #0043ff;
+  background: #6767ef;
 }
 
 @font-face {
+  font-family: "Domain";
+  font-family: "Pacifico";
   font-family: "Post No Bills Jaffna SemiBold";
   font-family: "Raleway";
   font-family: "Roboto";
@@ -78,16 +83,19 @@ body {
   top: 0px;
   background-size: cover;
 }
-.header__img {
-  position: absolute;
-  width: 1115px;
-  height: 717px;
+.header img {
+  margin: 0px 0px 0px 10px;
+  vertical-align: top;
+  width: 99%;
+  height: 74%;
+  border: 3px solid orange;
+  border-radius: 20px;
 }
 .header__position {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
-  margin: 30px 0 30px 0;
+  margin: 35px 0 100px 0;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
@@ -95,42 +103,65 @@ body {
           align-items: center;
 }
 .header__logo {
-  width: 186px;
-  height: 183px;
-  text-align: center;
+  width: 100%;
+  height: 150px;
   border: 20px;
   border-radius: 15px;
-  background-color: white;
-  
+  position: sticky;
+  top: 0; 
+  display: flex;
+}
+.header__logo h1{
+  font-family: "Pacifico", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #db4949;
+  margin-left: 55px;
+  text-transform: uppercase;
+  margin: 28px auto;
+  letter-spacing: 42px;
+}
+
+.header__logo p{
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 20px;
 }
 .header__menulimob {
   display: none;
 }
 .header__logo img {
-  width: 305px;
-  height: 167px;
-  margin: 0px 0px 0px 41px;
+  width: 10%;
+  height: 100%;
+  margin-left: 94px;
 }
+
 
 .header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
+  margin-left: 160px;
 }
 .header__menuli {
-  width: 578px;
+  width: 100%;
   height: 16px;
-  margin: 0 0 0 403px;
   display: block;
 }
 .header__item a {
-  font-family: "Raleway";
+  font-family: "Domaine", serif;
+  font-optical-sizing: auto;
   font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: bold;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.05em;
-  color: #FFFFFF;
+  color: orange;
+  border: 3px solid yellow;
+  border-radius: 15px;
+  padding: 4px 10px 4px 10px;
 }
 .header__item:not(:last-child) {
   margin: 0 40px 0 0;
@@ -166,46 +197,87 @@ body {
   top: 0;
   left: 0;
   width: 794px;
-  height: 180px;
+  height: 687px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 100px);
 }
-.content__galblog:not(:last-child) {
-  margin-right: 70px;
+.content__galery img{
+  width: 250px;
+  height: 205px 
 }
-.content__galblog:nth-child(1) {
-  width: 193px;
-  height: 180px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+
+.content__galery h1{
+  display: grid;
+  grid-column-start: 4;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 1;
 }
-.content__galblog:nth-child(2) {
-  width: 133px;
-  height: 180px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+.content__galblog1 {
+  display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
 }
-.content__galblog:nth-child(3) {
-  width: 134px;
-  height: 180px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+
+.content__galblog1 h1{
+  display: grid;
+    grid-column-start: 3;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 1;
 }
-.content__galblog:nth-child(4) {
-  width: 124px;
-  height: 180px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
+.content__galblog2 {
+  display: grid;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.content__galblog2 h1 {
+  display: grid;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.content__galblog3 {
+  display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.content__galblog3 h1 {
+  display: grid;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  width: 125px;
+}
+.content__galblog4 {
+  display: grid;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.content__galblog4 h1 {
+  display: grid;
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
 }
 .content__galblog h1 {
   font-family: "Roboto";
