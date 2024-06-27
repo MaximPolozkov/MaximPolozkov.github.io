@@ -1,13 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.cdnfonts.com/css/post-no-bills-jaffna");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"); /*для ценников*/
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&display=swap"); /*для загаловка цена*/
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Luckiest+Guy&display=swap"); /*для текста цен*/
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap");
+
 *,
 *::before,
 *::after {
@@ -47,16 +44,13 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
-  background: #a3a3f3;
+  background: #b5e2f7;
 }
 
 @font-face {
-  font-family: "Luckiest Guy", cursive;
-  font-family: "Dancing Script", cursive;
-  font-family: "Cinzel", serif;
-  font-family: "Domain";
-  font-family: "Pacifico";
-  font-family: "Post No Bills Jaffna SemiBold";
+  font-family: "EB Garamond";
+  font-family: "Oswald";
+  font-family: "Courier Prime", monospace;
   font-family: "Raleway";
   font-family: "Roboto";
   src: url(fonts/sairacondensed.woff2) format("woff2");
@@ -103,8 +97,8 @@ body {
   width: 100%;
     height: 50px;
     position: relative;
-    display: flex;
-    margin: 5px 0 0 0;
+    display: block;
+    margin: 2px 0 0 0;
     background: aliceblue;
     border-bottom: 2px solid yellow;
     border-top: 2px solid yellow;
@@ -112,10 +106,10 @@ body {
 }
 .header__logo {
   width: 100%;
-  height: 155px;
-  border: 20px;
+  height: 165px;
+  margin-top: 15px;
   position: sticky;
-  top: 0; 
+  top: 5px; 
   display: flex;
   flex-direction: column;
   background: white;
@@ -124,25 +118,42 @@ body {
 
 .logo{
   width: 100%;
-  height: 160px;
+  height: 100%;
   display: flex;
-}
-.header__logo h1{
-  font-family: "Pacifico", cursive;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  color: #db4949;
-  margin-left: 55px;
-  text-transform: uppercase;
-  margin: 10px auto;
-  letter-spacing: 42px;
+  justify-content: center;
 }
 
-.header__logo p{
-  font-size: 20px;
+.logo__text{
+  width: 440px;
+  height: 165px;
+  margin-left: 5px;
+}
+
+.logo__text h1{
+  width: 100%;
+  height: 95px;
+  font-family: "Courier Prime", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 90px;
+  color: #ed5c2f;
   text-transform: uppercase;
-  letter-spacing: 20px;
+  transform: skew(-15deg);
+  padding: 0px 0px 0px 12px;
+  -webkit-text-stroke: 0.01em #ca5e42;
+}
+
+.logo__text p{
+  width: 100%;
+  font-family: "Courier Prime", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: #ed5c2f;
+  transform: skew(-15deg);
+  padding: 0px 20px 0px 0px;
+  -webkit-text-stroke: 0.01em #ca5e42;
 }
 .header__menulimob {
   display: none;
@@ -150,7 +161,7 @@ body {
 .header__logo img {
   width: 10%;
   height: 100%;
-  margin-left: 94px;
+  padding: 5px 0 5px 0px;
 }
 
 
@@ -163,9 +174,10 @@ body {
   margin: 13px 20px 0px 0px 
 }
 .header__menuli {
-  width: 100%;
+  width: 1070px;
   height: 50px;
   display: block;
+  margin: auto;
 }
 .header__item a {
   font-family: "Domaine", serif;
@@ -182,7 +194,7 @@ body {
     background: white;
 }
 .header__item:not(:last-child) {
-  margin: 0 40px 0 0;
+  margin: 0 10px 0 0;
 }
 
 
@@ -209,6 +221,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid white;
 }
 .content__galery {
   position: relative;
@@ -225,7 +239,7 @@ body {
   width: 385px;
   height: 45px;
   text-align: center;
-  color: white;
+  color: #0091f4;
 }
 
 .content__galery p {
@@ -233,7 +247,7 @@ body {
   height: 45px;
   margin: 70px 0px 0 0px;
   text-align: center;
-  color: white;
+  color: #0091f4;
 
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
@@ -242,7 +256,7 @@ body {
   letter-spacing: 5px;
 }
 .content__galery img{
-  width: 250px;
+  width: 185px;
   height: 185px;
   background: white;
   border-radius: 15px;
@@ -252,17 +266,17 @@ body {
 
 .content__h1{
   width: 100%;
-  height: 55px;
+  height: 70px;
   text-align: center;
   margin: 0 auto;
-  font-family: "Cinzel", serif;
+  font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 600;
   font-style: normal;
-  font-size: 40px;
-  letter-spacing: 15px;
-  color: white;
-  -webkit-text-stroke: 0.01em cyan;
+  font-size: 45px;
+  letter-spacing: 5px;
+  color: #0091f4;
+  border-top: 2px solid white;
 }
 
 
@@ -417,18 +431,23 @@ body {
 }
 .content__spisok {
   position: relative;
-  width: 1100px;
+  width: 100%;
   height: 900px;
   margin-top: 120px;
 }
 .content__spisok h1 {
-  font-family: "Playfair Display";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
-  color: #D4C17F;
-  margin-bottom: 100px;
+  width: 100%;
+    height: 70px;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 45px;
+    letter-spacing: 5px;
+    color: #0091f4;
+    
 }
 .content__img {
   width: 1100px;
@@ -468,6 +487,28 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
+}
+
+.content__footer{
+  width: 100%;
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.content__footer p{
+  font-family: "EB Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+  border-radius: 15px;
+  background: white;
+  color: #0091f4;
+  margin-left: 352px;
+  width: 1122px;
 }
 
 /*Конец Верстка первого блока (content)*/
@@ -844,6 +885,13 @@ body {
     position: sticky;
     display: flex;
     background: white;
+    top: 0;
+  }
+
+  .logo__text{
+    width: 146px;
+    height: 54px;
+    margin-left: 5px;
   }
 
   .header__logo img {
@@ -852,27 +900,21 @@ body {
     margin-left: 22px
   }
   .header__logo h1{
-    font-family: "Pacifico", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #db4949;
-    margin-left: 55px;
-    text-transform: uppercase;
-    margin: 15px auto;
-    letter-spacing: 9px;
+    height: 28px;
+    font-size: 26px;
+    margin-top: 5px;
   }
 
   .header__logo img {
     width: 10%;
     height: 45%;
-    margin-left: 22px 
+    margin-top: 3px;
+    padding: 0 0 0 0;
   }
 
   .header__logo p {
-    font-size: 7px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    font-size: 15px;
+    padding: 0px 20px 0px 6px;
   }
 
   .header img {
@@ -1007,9 +1049,7 @@ body {
     margin-top: 10px;
   }
   .header__position {
-    margin: 0 0 0 0;
-    border-top: none;
-    border-bottom: none;
+   display: none;
   }
   .header__position a {
     margin-top: 30px;
@@ -1026,6 +1066,10 @@ body {
     margin: 34px 0 0 0;
   }
 
+  .content__h1{
+    font-size: 35px;
+  }
+
 
   .content__galery {
     position: relative;
@@ -1035,8 +1079,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 100px);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 155px);
   }
 
   .content__galery h1 {
@@ -1303,31 +1347,21 @@ body {
   .header__contacts {
     top: 200px;
   }
+
+  .logo__text{
+    width: 146px;
+    height: 54px;
+    margin-left: 5px;
+  }
+
   .header__logo {
     margin: 0 auto;
+    top: 0;
   }
 
   .header__logo img {
     width: 15%;
     height: 89%;
-    margin-left: 22px;
-  }
-  .header__logo h1{
-    font-family: "Pacifico", cursive;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    color: #db4949;
-    margin-left: 55px;
-    text-transform: uppercase;
-    margin: 15px auto;
-    letter-spacing: 9px;
-  }
-
-  .header__logo p {
-    font-size: 7px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
   }
 
   .header img {
@@ -1461,7 +1495,7 @@ body {
     margin-top: 10px;
   }
   .header__position {
-    margin: 0 0 0 0;
+    display: none;
   }
   .header__position a {
     margin-top: 30px;
@@ -1476,7 +1510,10 @@ body {
     width: 100%;
     height: 100%;
     margin: 34px 0 0 0;
+  }
 
+  .content__h1{
+    font-size: 35px;
   }
 
   .content__container{
@@ -1497,8 +1534,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 100px);
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 155px);
     grid-row-gap: 25px;
   }
 
@@ -1612,6 +1649,11 @@ body {
   .content__galery img {
     width: 80px;
     height: 100px
+  }
+
+  .content__footer p{
+    margin-left: 0;
+    font-size: 15px;
   }
   .content__galblog:not(:last-child) {
     margin-right: 35px;
