@@ -215,6 +215,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 0 0 0;
+  border-bottom: 2px solid white;
 }
 .content__position {
   position: relative;
@@ -420,7 +421,7 @@ body {
 .content__spisok {
   position: relative;
   width: 100%;
-  height: 690px;
+  height: 750px;
   border-bottom: 2px solid white;
 }
 
@@ -450,10 +451,28 @@ body {
   margin-top: 20px;
 }
 
-.content__img img {
-  width: 95px;
+.content__imgp1 img {
+  width: 120px;
   height: 65px;
   margin: 25px 0px 30px 0px;
+}
+
+.content__imgp2 img {
+  width: 77px;
+  height: 65px;
+  margin: 25px 0px 30px 0px;
+}
+
+.content__imgp3 img {
+  width: 95px;
+  height: 78px;
+  margin: 25px 0px 30px 0px;
+}
+
+.content__imgp4 img {
+  width: 104px;
+  height: 115px;
+  margin: 0px 0px 30px 0px;
 }
 
 .content__img h1{
@@ -468,10 +487,11 @@ body {
     letter-spacing: 0;
 }
 .content__img p {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Syncopate", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-style: normal;
+  font-size: 19px;
+  letter-spacing: 1px;
   line-height: 0;
   color: #FFFFFF;
 }
@@ -916,9 +936,13 @@ body {
   .header__contacts {
     top: 200px;
   }
+
+  .logo{
+    justify-content: left;
+  }
   .header__logo {
     width: 100%;
-    height: 55px;
+    height: 86px;
     position: sticky;
     display: flex;
     background: white;
@@ -931,27 +955,20 @@ body {
     margin-left: 5px;
   }
 
-  .header__logo img {
-    width: 15%;
-    height: 109%;
-    margin-left: 22px
-  }
   .header__logo h1{
-    height: 28px;
-    font-size: 26px;
-    margin-top: 5px;
+    height: 85%;
+    font-size: 40px;
   }
 
   .header__logo img {
-    width: 10%;
-    height: 45%;
-    margin-top: 3px;
-    padding: 0 0 0 0;
+    width: 25%;
+    height: 100%;
+    margin-left: 40px
   }
 
   .header__logo p {
-    font-size: 15px;
-    padding: 0px 20px 0px 6px;
+    font-size: 23px;
+    padding: 0px 20px 0px 3px;
   }
 
   .header img {
@@ -970,21 +987,21 @@ body {
   }
   .header__hamb {
     cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    position: fixed;
+    float: left;
+    position: relative;
     margin-left: 9px;
-    margin-top: 56px;
+    z-index: 1;
+    margin-top: 15px;
   }
   .header__line {
-    background: white;
+    background: #0040c2;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
   }
   .header__line::before, .header__line::after {
-    background: white;
+    background: #0040c2;
     content: "";
     display: block;
     height: 100%;
@@ -1196,7 +1213,7 @@ body {
   }
   .content__spisok {
     width: 100%;
-    height: 975px;
+    height: 1686px;
     text-align: center;
   }
 
@@ -1233,10 +1250,28 @@ body {
     text-align: center;
   }
 
-  .content__img img{
-    width: 95px;
+  .content__imgp1 img {
+    width: 120px;
     height: 65px;
-    margin: 10px 0px 0px 0px;
+    margin: 25px 0px 30px 0px;
+  }
+  
+  .content__imgp2 img {
+    width: 77px;
+    height: 65px;
+    margin: 25px 0px 30px 0px;
+  }
+  
+  .content__imgp3 img {
+    width: 95px;
+    height: 78px;
+    margin: 25px 0px 30px 0px;
+  }
+  
+  .content__imgp4 img {
+    width: 104px;
+    height: 115px;
+    margin: 0px 0px 30px 0px;
   }
 
 
@@ -1281,6 +1316,9 @@ body {
     letter-spacing: 3px;
   }
 
+  .content__textp4 h1{
+    height: 110px;
+  }
   .content__imgp img {
     width: 90%;
     margin: 0 auto;
@@ -1469,8 +1507,8 @@ body {
   }
 
   .header__logo img {
-    width: 15%;
-    height: 89%;
+    width: 25%;
+    height: 100%;
   }
 
   .header img {
@@ -1488,21 +1526,21 @@ body {
   }
   .header__hamb {
     cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    position: fixed;
+    float: left;
+    position: relative;
     margin-left: 9px;
-    margin-top: 56px;
+    z-index: 1;
+    margin-top: 15px;
   }
   .header__line {
-    background: white;
+    background: #0040c2;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
   }
   .header__line::before, .header__line::after {
-    background: white;
+    background: #0040c2;
     content: "";
     display: block;
     height: 100%;
@@ -1652,13 +1690,13 @@ body {
     width: 250px;
     height: 30px;
     font-size: 20px;
-    padding: 35px 0 0 0px;
   }
 
   .content__galery p{
     width: 250px;
     height: 40px;
     font-size: 15px;
+    margin: 30px 0px 0 0px;
   }
 
   .content__galblog1 {
@@ -1757,7 +1795,7 @@ body {
   
   .content__galery img {
     width: 80px;
-    height: 100px
+    height: 80px
   }
 
   .p_1,
@@ -1766,9 +1804,6 @@ body {
     margin-top: 20px;
   }
 
-  .content__textp1 h1{
-    height: 45px;
-  }
 
   .content__textp1{
     text-align: center;
@@ -1786,6 +1821,10 @@ body {
     text-align: center;
   }
 
+  .content__textp4 h1{
+    height: 110px;
+  }
+
   .content__footer p{
     margin-left: 0;
     font-size: 15px;
@@ -1795,7 +1834,7 @@ body {
   }
   .content__spisok {
     width: 100%;
-    height: 1650px;
+    height: 1686px;
     text-align: center;
   }
   .content__textp {
@@ -2010,21 +2049,21 @@ body {
   }
   .header__hamb {
     cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    position: fixed;
-    margin-left: 80%;
+    float: left;
+    position: relative;
+    margin-left: 9px;
+    z-index: 1;
     margin-top: 15px;
   }
   .header__line {
-    background: white;
+    background: #0040c2;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
   }
   .header__line::before, .header__line::after {
-    background: white;
+    background: #0040c2;
     content: "";
     display: block;
     height: 100%;
@@ -2129,7 +2168,7 @@ body {
   }
   .content__spisok {
     width: 100%;
-    height: 1650px;
+    height: 1686px;
     text-align: center;
   }
   .content__textp {
@@ -2327,21 +2366,21 @@ body {
   }
   .header__hamb {
     cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    position: fixed;
-    margin-left: 80%;
-    margin-top: 15px;
+    float: left;
+    position: relative;
+    margin-left: 9px;
+    z-index: 1;
+    
   }
   .header__line {
-    background: white;
+    background: #0040c2;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
   }
   .header__line::before, .header__line::after {
-    background: white;
+    background: #0040c2;
     content: "";
     display: block;
     height: 100%;
@@ -2446,7 +2485,7 @@ body {
   }
   .content__spisok {
     width: 100%;
-    height: 1650px;
+    height: 1686px;
     text-align: center;
   }
   .content__textp {
@@ -2644,21 +2683,20 @@ body {
   }
   .header__hamb {
     cursor: pointer;
-    float: right;
-    padding: 40px 20px;
-    position: fixed;
+    float: left;
+    position: relative;
     margin-left: 9px;
-    margin-top: 56px;
+    z-index: 1;
   }
   .header__line {
-    background: white;
+    background: #0040c2;
     display: block;
     height: 2px;
     position: relative;
     width: 24px;
   }
   .header__line::before, .header__line::after {
-    background: white;
+    background: #0040c2;
     content: "";
     display: block;
     height: 100%;
@@ -2763,7 +2801,7 @@ body {
   }
   .content__spisok {
     width: 100%;
-    height: 1555px;
+    height: 1686px;
     text-align: center;
   }
   .content__textp {
