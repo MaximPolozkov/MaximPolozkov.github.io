@@ -1458,7 +1458,8 @@ body {
   }
 
   .slide-header{
-    width: 304px !important;
+    width: 100% !important;
+    margin-right: -1px;
   }
 
 
@@ -1507,9 +1508,10 @@ body {
   }
 
   .swiper-actiwe{
-    width: 354px !important;
+    width: 100% !important;
     margin-left: 0;
     margin-top: 27px;
+    margin-right: 0;
   }
 
   .footer {
@@ -1523,8 +1525,12 @@ body {
     align-items: center;
   }
 
+  .footer__contacts{
+    border-bottom: 0;
+  }
+
   .footer__contacts h1,p,a{
-    font-size: 11px;
+    font-size: 20px;
   }
   
 
@@ -1942,7 +1948,8 @@ body {
   }
 
   .slide-header{
-    width: 304px !important;
+    width: 100% !important;
+    margin-right: -1px;
   }
 
 
@@ -1991,9 +1998,10 @@ body {
   }
 
   .swiper-actiwe{
-    width: 354px !important;
+    width: 100% !important;
     margin-left: 0;
     margin-top: 27px;
+    margin-right: 0;
   }
   
 
