@@ -170,7 +170,7 @@
                         <div class="pros__img2">
                             <img src="./images/Pled.png" alt="">
                             <div class="pros__text">
-                            <h1>Одеяло и пледы</h1>
+                            <h1>Одеяла и пледы</h1>
                             </div>
                         </div>
 
@@ -265,53 +265,55 @@
            
 
             <div class="cart"><!--для блока сушка-->
-                
+                <h1>Для сушки</h1>
             </div>
             <div class="form">
                 <h1>Инструкции</h1>
                 
-                <div class="swiper__wrapper _container">
-                <div class="swiper">
+                <div class="swiper__wrapper _container" >
+                    <div class="swiper-content">
+                        <img src="./images/lupa.png" onclick="displayModal(this);">
+                    </div>
+                <div id="swiper"  class="swiper">
                     <div class="swiper-wrapper">
 
-                      <div class="swiper-slide">
+                      <div  class="swiper-slide slide-header">
                         <div class="wrapper__img">
-                            <img src="./images/2.webp" alt="">
+                            <img id="img" src="./images/2.webp">
                         </div>
                       </div>
 
                       
 
-                      <div class="swiper-slide">
+                      <div class="swiper-slide slide-header">
                         <div class="wrapper__img">
-                            <img src="./images/3.webp" alt="">
+                            <img id="img" src="./images/3.webp" alt="">
                         </div>
                       </div>
 
-                      <div class="swiper-slide">
+                      <div class="swiper-slide slide-header">
                         <div class="wrapper__img">
-                            <img src="./images/4.webp" alt="">
+                            <img id="img" src="./images/4.webp" alt="">
                         </div>
                       </div>
 
-                      <div class="swiper-slide">
+                      <div class="swiper-slide slide-header">
                         <div class="wrapper__img">
-                            <img src="./images/5.webp" alt="">
+                            <img id="img" src="./images/5.webp" alt="">
                         </div>
                       </div>
 
-                      <div class="swiper-slide">
+                      <div class="swiper-slide slide-header">
                         <div class="wrapper__img">
-                            <img src="./images/6.webp" alt="">
+                            <img id="img" src="./images/6.webp" alt="">
                         </div>
                       </div>
 
-                      <div class="swiper-slide">
+                      <div class="swiper-slide slide-header">
                         <div class="wrapper__img">
-                            <img src="./images/7.webp" alt="">
+                            <img id="img" src="./images/7.webp" alt="">
                         </div>
                       </div>
-
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -324,236 +326,98 @@
                     </div>
                   </div>
                 </div>
+
+                 <div id="modal" class="modal">
+                    
+                        <span id="close" class="close" onclick="hideModal();">&times;</span>
+                    <div class="modal-content">
+                        <div class="swiper__wrapper swiper-ryt">
+                        <div id="modal__swiper" class="modal__swiper">
+                    <div class="swiper-wrapper">
+
+                     
+                      <div  class="swiper-slide swiper-actiwe" >
+                        <div  class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/2.webp">
+                        </div>
+                      </div>
+
+                      
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/3.webp" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/4.webp" alt="" >
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/5.webp">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe">
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/6.webp" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/7.webp" alt="">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                    </div>
+                  </div>
+              </div>
+                            
+                    </div>
+                    
+                </div>
+
             </div>
 
-            
+           
 
+            </div>
             
-            
-        </div>   
+          
           
         
                 
         <footer class="footer">
-            <div class="footer__container _container">
-                <div class="footer__content">
-                    <div class="header__logo">
-                        <h1>HouseVOP</h1>
-                        <p>жилой комплекс</p>
-                    </div>
-                    <div class="footer__list">
-                        <ul>
-                            <li><a href="">О компании</a></li>
-                            <li><a href="">Район</a></li>
-                            <li><a href="">Каталог квартир</a></li>
-                            <li><a href="">Ипотека</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
-                    </div>  
-                    <div class="footer__list">
-                        <ul class="footer__ul">
-                            <li><a href="">О компании</a></li>
-                            <li><a href="">Район</a></li>
-                            <li><a href="">Каталог квартир</a></li>
-                            <li><a href="">Ипотека</a></li>
-                            <li><a href="">Контакты</a></li>
-                        </ul>
-                    </div> 
-                    <div class="footer__list">
-                        <ul>
-                            <li><a href="">Адрес: Наб. реки Фонтанки 10-15</a></li>
-                            <li><a href="">Телефон: 8 (812) 123-45-67</a></li>
-                            <li><a href="">Отдел продаж: 10:00 - 20:00</a></li>
-                            <li><a href="">E-mail: <span class="footer__email">vip@housevip.ru</span></a></li>
-                        </ul>
-                        <div class="footer__soc">
-                            <a href="#"><img src="./images/youtube.webp" alt=""></a>
-                            <a href="#"><img src="./images/vk.webp" alt=""></a>
-                            <a href="#"><img src="./images/facebook.webp" alt=""></a>
-                            <a href="#"><img src="./images/instagram.webp" alt=""></a>
-                        </div>
-                    </div> 
-                </div>
-                  
+            <div class="footer__contacts">
+                <h1>Адрес: пгт.Промышленная, ул. Н.Островского 2а (рядом OZON)</h1>
+            </div>
+            <div class="footer__contacts">
+                <p>Время работы: с 9:00 до 21:00</p>
+            </div>
+            <div class="footer__contacts">
+                <a href="tel:+7(991)8947418">Возникли вопросы звоните 89918947418</a>
             </div>
         </footer>
        
         
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/main.min.js"></script>
-
-    <script>
-        //var direction = window.innerWidth <= 760 ? swiper : myPlugin(swiper, extendParams, on);
-        
-
-        var screenWidth = window.innerWidth;
-        if(screenWidth < 760){
-            const progressCircle = document.querySelector(".autoplay-progress svg");
-            const progressContent = document.querySelector(".autoplay-progress span");
-            
-            // Init Swiper
-    var swiper = new Swiper('.swiper', {
-        
-      // Install Plugin To Swiper
-      /*modules: [myPlugin],
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true, 
-      },*/
-
-      spaceBetween: 40,
-      centeredSlides: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-
-      rewind: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      on: {
-        autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-        },
-      },
-      // Enable debugger
-      debugger: true,
-    });
-            
-        }
-        
-        if(screenWidth > 760){
-            
-            const progressCircle = document.querySelector(".autoplay-progress svg");
-            const progressContent = document.querySelector(".autoplay-progress span");
-            var swiper = new Swiper('.swiper', {
-                spaceBetween: 20,
-      centeredSlides: true,
-      autoplay: {
-        delay: 10000,
-        disableOnInteraction: false
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true
-      },
-
-
-            slidesPerView: 3,
-            //direction: getDirection(),
-            rewind: true,
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-              clickable: true,
-            },
-            on: {
-              resize: function () {
-                swiper.changeDirection(getDirection());
-              },
-              autoplayTimeLeft(s, time, progress) {
-          progressCircle.style.setProperty("--progress", 1 - progress);
-          progressContent.textContent = `${Math.ceil(time / 1000)}s`;
-        },
-            },
-          });
-        
-          function getDirection() {
-            var windowWidth = window.innerWidth;
-            var direction = window.innerWidth <= 760 ? 'horizontal' : 'horizontal';
-             
-        
-            return direction;
-          
-}
-    
-        }
-
-
-
-        
-
-
-        /*function myPlugin({ swiper, extendParams, on }) {
-      extendParams({
-        debugger: false,
-      });
-
-      on('init', () => {
-        if (!swiper.params.debugger) return;
-        console.log('init');
-      });
-      on('click', (swiper, e) => {
-        if (!swiper.params.debugger) return;
-        console.log('click');
-      });
-      on('tap', (swiper, e) => {
-        if (!swiper.params.debugger) return;
-        console.log('tap');
-      });
-      on('doubleTap', (swiper, e) => {
-        if (!swiper.params.debugger) return;
-        console.log('doubleTap');
-      });
-      on('sliderMove', (swiper, e) => {
-        if (!swiper.params.debugger) return;
-        console.log('sliderMove');
-      });
-      on('slideChange', () => {
-        if (!swiper.params.debugger) return;
-        console.log(
-          'slideChange',
-          swiper.previousIndex,
-          '->',
-          swiper.activeIndex
-        );
-      });
-      on('slideChangeTransitionStart', () => {
-        if (!swiper.params.debugger) return;
-        console.log('slideChangeTransitionStart');
-      });
-      on('slideChangeTransitionEnd', () => {
-        if (!swiper.params.debugger) return;
-        console.log('slideChangeTransitionEnd');
-      });
-      on('transitionStart', () => {
-        if (!swiper.params.debugger) return;
-        console.log('transitionStart');
-      });
-      on('transitionEnd', () => {
-        if (!swiper.params.debugger) return;
-        console.log('transitionEnd');
-      });
-      on('fromEdge', () => {
-        if (!swiper.params.debugger) return;
-        console.log('fromEdge');
-      });
-      on('reachBeginning', () => {
-        if (!swiper.params.debugger) return;
-        console.log('reachBeginning');
-      });
-      on('reachEnd', () => {
-        if (!swiper.params.debugger) return;
-        console.log('reachEnd');
-      });
-    }*/
-  
-   
-
-
-
-
-
-        
-    </script>
 </body>
 
 </html>
