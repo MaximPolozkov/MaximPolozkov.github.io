@@ -85,6 +85,8 @@ body {
   left: 0px;
   top: 0px;
   background-size: cover;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 .header img {
   margin: 140px 0px 0px 10px;
@@ -112,11 +114,12 @@ body {
   height: 165px;
   margin-top: 15px;
   position: sticky;
-  top: 5px; 
+  top: 0; 
   display: flex;
   flex-direction: column;
   background: white;
   z-index: 2;
+  border-bottom: 2px solid white;
 }
 
 .logo{
@@ -214,6 +217,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 0 0 0;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
 }
 .content__position {
   position: relative;
@@ -556,18 +561,19 @@ body {
   display: flex;
   margin-top: 50px;
   margin-bottom: 30px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .content__footer p{
+  width: fit-content;
   font-family: "EB Garamond", serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
   font-size: 30px;
   color: white;
-  margin-left: 352px;
-  width: 1122px;
+  
 }
 
 /*Конец Верстка первого блока (content)*/
@@ -578,6 +584,8 @@ body {
   height: 1770px;
   left: 0px;
   top: 0;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   border-bottom: 2px solid white;
   
 }
@@ -1098,7 +1106,7 @@ body {
     width: 50%;
     height: 100%;
     position: fixed;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
   }
   .header__menulimob {
@@ -1120,17 +1128,19 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 25px;
+    align-items: center;
   }
   .header__menumob li {
     width: 100%;
     height: 100px;
     display: inline-block;
     text-align: center;
+    margin-top: 55px;
   }
   .header__menumob li > a {
     display: inline-block;
-    color: white;
-    font-size: 14px;
+    color: #0040c2;
+    font-size: 25px;
   }
   .header__menuli {
     display: none;
@@ -1631,7 +1641,7 @@ body {
     width: 50%;
     height: 100%;
     position: fixed;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
   }
   .header__menulimob {
@@ -1653,17 +1663,19 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 25px;
+    align-items: center;
   }
   .header__menumob li {
     width: 100%;
     height: 100px;
     display: inline-block;
     text-align: center;
+    margin-top: 55px;
   }
   .header__menumob li > a {
     display: inline-block;
-    color: white;
-    font-size: 14px;
+    color: #0040c2;
+    font-size: 25px;
   }
   .header__menuli {
     display: none;
@@ -2107,7 +2119,7 @@ body {
     width: 50%;
     height: 100%;
     position: fixed;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
   }
   .header__menulimob {
@@ -2129,17 +2141,19 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 25px;
+    align-items: center;
   }
   .header__menumob li {
-    width: 100%;
-    height: 100px;
+    width: fit-content;
+    height: fit-content;
     display: inline-block;
     text-align: center;
+    margin-top: 55px;
   }
   .header__menumob li > a {
     display: inline-block;
-    color: white;
-    font-size: 14px;
+    color: #0040c2;
+    font-size: 25px;
   }
   .header__position {
     margin: 0 0 0 0;
@@ -2301,7 +2315,7 @@ body {
     width: 50%;
     height: 100%;
     position: fixed;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
   }
   .header__menulimob {
@@ -2323,17 +2337,19 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 25px;
+    align-items: center;
   }
   .header__menumob li {
-    width: 100%;
-    height: 100px;
+    width: fit-content;
+    height: fit-content;
     display: inline-block;
     text-align: center;
+    margin-top: 55px;
   }
   .header__menumob li > a {
     display: inline-block;
-    color: white;
-    font-size: 14px;
+    color: #0040c2;
+    font-size: 25px;
   }
   .header__position {
     margin: 0 0 0 0;
@@ -2496,7 +2512,7 @@ body {
     width: 50%;
     height: 100%;
     position: fixed;
-    background-color: black;
+    background-color: white;
     overflow: hidden;
   }
   .header__menulimob {
@@ -2518,17 +2534,19 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-top: 25px;
+    align-items: center;
   }
   .header__menumob li {
-    width: 100%;
-    height: 100px;
+    width: fit-content;
+    height: fit-content;
     display: inline-block;
     text-align: center;
+    margin-top: 55px;
   }
   .header__menumob li > a {
     display: inline-block;
-    color: white;
-    font-size: 14px;
+    color: #0040c2;
+    font-size: 25px;
   }
   .header__position {
     margin: 0 0 0 0;
