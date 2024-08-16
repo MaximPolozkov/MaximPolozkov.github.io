@@ -124,4 +124,21 @@ document.head.appendChild(importCdn);
             }
         }
 
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                  entry.target.classList.add('fade-in');
+                  entry.target.classList.remove('fade-out');
+              } else {
+                  entry.target.classList.remove('fade-in');
+                  entry.target.classList.add('fade-out');
+              }
+          });
+      });
+  
+      const elements = document.querySelectorAll('.pros__img1, .pros__img2, .pros__img3');
+      elements.forEach((element) => {
+          observer.observe(element);
+      });
         

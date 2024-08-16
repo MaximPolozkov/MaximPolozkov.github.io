@@ -524,7 +524,7 @@ body {
 .content__textp1{
   text-align: center;
   border: 10px solid orange;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 15px;
 }
 
@@ -540,7 +540,7 @@ body {
 .content__textp2{
   text-align: center;
   border: 10px solid orange;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 15px;
 }
 
@@ -556,7 +556,7 @@ body {
 .content__textp3{
   text-align: center;
   border: 10px solid orange;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 15px;
 }
 
@@ -572,7 +572,7 @@ body {
 .content__textp4{
   text-align: center;
   border: 10px solid orange;
-  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 20px 10px;
   border-radius: 15px;
 }
 
@@ -695,6 +695,59 @@ body {
   max-width: 80%;
     height: 80%;
     border: 10px solid orange;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade-in 2s ease-in-out forwards;
+  transform-origin: 50% 100%;
+}
+
+.fade-out {
+  opacity: 1;
+  animation: fade-out 2s ease-in-out forwards;
+  transform-origin: 50% 100%;
+}
+
+.fade-in.show-on-scroll,
+.fade-out.show-on-scroll {
+  transform: translateY(20px);
+}
+
+@keyframes fade-in {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fade-out {
+  from {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  to {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+}
+
+.show-on-scroll {
+  animation: show-on-scroll 2s ease-in-out forwards;
+  transform-origin: 50% 100%;
+}
+
+@keyframes show-on-scroll {
+  from {
+      transform: translateY(20px);
+  }
+  to {
+      transform: translateY(0);
+  }
 }
 
 .pros__content2 {
@@ -1416,6 +1469,20 @@ body {
             flex-direction: column;
   }
 
+  .show-on-scroll {
+    animation: show-on-scroll 2s ease-in-out forwards;
+    transform-origin: 50% 50%;
+}
+
+@keyframes show-on-scroll {
+    from {
+        transform: translateX(-50px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
   .pros__img1{
     width: 300px;
     height: 300px;
@@ -1468,6 +1535,8 @@ body {
     height: 1100px;
     justify-content: center;
   }
+
+
 
 
 /*.cart{
