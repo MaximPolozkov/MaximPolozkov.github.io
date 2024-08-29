@@ -1284,6 +1284,7 @@ body {
   .header__content h1 {
     font-size: 34px;
   }
+ 
   .header__contacts {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -1293,6 +1294,10 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .hidden{
+    opacity: 0;
+    transition: opacity 1s;
   }
   .header__adres {
     margin: auto;
@@ -2632,6 +2637,8 @@ body {
     transition: all 0.2s ease-out;
     width: 100%;
   }
+
+ 
   .header__line::before {
     top: 5px;
   }

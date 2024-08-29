@@ -80,17 +80,12 @@ document.head.appendChild(importCdn);
         const modal = document.getElementById("modal");
         const close = document.getElementById("close")
         const headerLogo = document.querySelector('.header__logo');
-        //const modalSwiper = document.getElementById('modal__swiper');
-        //const wrapperImg = document.getElementById('wrapper__img');
         
         // Отображаем модальное окно и устанавливаем источник изображения
         function displayModal(img){
 
             modal.style.display = "block";
-            //modalImage.src = img.src;
             headerLogo.style.display = "none";
-            //modalSwiper.style.width = "100%";
-            //wrapperImg.style.top = "0px"
 
             const progressCircle = document.querySelector(".autoplay-progress svg");
         const progressContent = document.querySelector(".autoplay-progress span");
@@ -142,3 +137,4 @@ document.head.appendChild(importCdn);
           observer.observe(element);
       });
         
+      
