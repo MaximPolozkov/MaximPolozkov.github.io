@@ -1,0 +1,143 @@
+.calendar {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calendar-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .calendar-body {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .table-header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .weekday {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .table-content {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .calendar-day {
+    width: 125px;
+    height: 75px;
+    position: relative;
+    border: 1px solid #a6a6a6;
+  }
+  
+  
+  .calendar-day p {
+    position: absolute;
+    right: 10px;
+    color: #a6a6a6;
+  }
+  
+  .current p {
+    color: #000000;
+    
+  }
+
+  .current:hover{
+    background-color: rgba(0,0,0,.10);
+  }
+  
+  .selected p {
+    color: #cc0000;
+    font-weight: bold;
+    background-color: aqua;
+  }
+
+ .curren_no{
+  display: none;
+ }
+
+ .non{
+  pointer-events: none;
+  background: rgba(255, 0, 0, 0.089);
+ }
+
+ .calendar-day.past{
+  color: rgba(255, 0, 0, 0.164);
+  cursor: default;
+ }
+
+ .calendar-day.current:not(.past){
+  cursor: pointer;
+ }
+
+ .calendar-weekdays {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.active{
+  background-color: white;
+}
+
+.weekday {
+  width: 100px;
+  text-align: center;
+}
+
+.calendar-day {
+  cursor: pointer;
+
+  &.clickable {
+    cursor: pointer;
+  }
+
+  &.non-clickable {
+    cursor: not-allowed;
+  }
+}
+
+.calendar-wrapper{
+  width: fit-content;
+  height: fit-content;
+}
+
+.time-slots {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.time-slot {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  user-select: none;
+}
+
+.time-slot:not(:last-child){
+  margin-right: 10px;
+}
+
+.time-slot:hover {
+  background-color: #e0e0e0;
+}

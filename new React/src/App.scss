@@ -1,0 +1,19 @@
+.wrapper{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container{
+  width: 1600px;
+  margin: 0px auto;
+ 
+}
+
+.App{
+  flex: 1 1 auto;
+}
+
+@media  (min-width: 1440px) and (max-width: 1600px){     
+  
+}

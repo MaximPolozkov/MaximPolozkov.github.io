@@ -1,0 +1,22 @@
+.Header{
+    height: 200px;
+    position: relative;
+}
+
+.HeaderImg{
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.HeaderCenter{
+    height: 200px;
+    position: absolute;
+    left: 500px;
+}
+.HeaderLeft{
+    height: 200px;
+    position: absolute;
+}
