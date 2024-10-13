@@ -6,7 +6,6 @@
     <meta name="keywords" content="стирка, просто прачка, стирка самообслуживания, стирка для больших вещей, стирка по доступным ценам, стирка с безналичной оплатой">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.example.com;">
     <link rel="shortcut icon" href="/images/LogoProsto.webp" type="image/x-icon">
     <title>Прачечная самообслуживания</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -19,7 +18,7 @@
     <div class="wrapper">
         <div class="cant">
             
-        <div class="header__logo">
+        <header class="header__logo">
             <div class="header__nav">
                 <input class="header__menu" type="checkbox" id="header__menu"/>
                 <label class="header__hamb" for="header__menu"><span class="header__line" id="burger-menu"></span></label>
@@ -44,11 +43,11 @@
                 </div> 
             </div> 
            
-        </div >
+        </header >
 
        
-
-            <header class="header">
+<section>
+            <div class="header">
                 <div class="header__wrapper">
 
                     <div class="header__position">
@@ -67,7 +66,7 @@
                         <img src="./images/Bodey.webp" alt="">
                 </div>
                 
-            </header>
+            </div>
 
             <div class="content" id="prices">
                 <div class="content__container">
@@ -281,7 +280,143 @@
                 </div>
             </div>
            
+            <div class="no-stirka">
+                <h1>Нельзя стирать</h1>
 
+                <div class="swiper__wrapper _container" >
+                    <div class="swiper-content">
+                        <img src="./images/lupa.webp" onclick="nodisplayModal(this);">
+                    </div>
+                <div id="swiper"  class="swiper">
+                    <div class="swiper-wrapper">
+
+                      <div  class="swiper-slide slide-header">
+                        <h3 class="no-h3">Обувь</h3>
+                        <div class="wrapper__img">
+                            <img id="img" src="./images/obuv.webp">
+                        </div>
+                      </div>
+
+                      
+
+                      <div class="swiper-slide slide-header">
+                        <h3 class="no-h3">Натуральный мех (шубы, тулупы)</h3>
+                        <div class="wrapper__img">
+                            <img id="img" src="./images/mech.jpg" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide slide-header">
+                        <h3 class="no-h3">Пуховые и перовые подушки и одеяла</h3>
+                        <div class="wrapper__img">
+                            <img id="img" src="./images/puh.webp" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide slide-header">
+                        <h3 class="no-h3">Ватные одеяла</h3>
+                        <div class="wrapper__img">
+                            <img id="img" src="./images/vata.webp" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide slide-header">
+                        <h3 class="no-h3">Ковры и паласы</h3>
+                        <div class="wrapper__img">
+                            <img id="img" src="./images/kover.webp" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide slide-header">
+                        <h3 class="no-h3">Подстилки животных</h3>
+                        <div class="wrapper__img">
+                            <img id="img" src="./images/dla zvery.webp" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                    </div>
+                  </div>
+                </div>
+
+                 <div id="no-modal" class="modal">
+                    
+                        <span id="no-close" class="close" onclick="nohideModal();">&times;</span>
+                    <div class="modal-content">
+                        <div class="swiper__wrapper swiper-ryt">
+                        <div id="modal__swiper" class="modal__swiper">
+                    <div class="swiper-wrapper">
+
+                     
+                      <div  class="swiper-slide swiper-actiwe" >
+                        <h3 class="no-h3">Обувь</h3>
+                        <div  class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/obuv.webp">
+                        </div>
+                      </div>
+
+                      
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <h3 class="no-h3">Натуральный мех (шубы, тулупы)</h3>
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/mech.jpg" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <h3 class="no-h3">Пуховые и перовые подушки и одеяла</h3>
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/puh.webp" alt="" >
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe" >
+                        <h3 class="no-h3">Ватные одеяла</h3>
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/vata.webp">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe">
+                        <h3 class="no-h3">Ковры и паласы</h3>
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/kover.webp" alt="">
+                        </div>
+                      </div>
+
+                      <div class="swiper-slide swiper-actiwe">
+                        <h3 class="no-h3">Подстилки животных</h3>
+                        <div class="wrapper__img wrapper-active">
+                            <img id="img" src="./images/kover.webp" alt="">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                    <div class="autoplay-progress">
+                    <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                    </svg>
+                    <span></span>
+                    </div>
+                  </div>
+              </div>
+                            
+                    </div>
+                    
+                </div>
+                
+            </div>
            
             <div class="form" id="instructions">
                 <h1>Инструкции</h1>
@@ -413,7 +548,7 @@
 
             </div>
             
-          
+        </section>
           
         
                 

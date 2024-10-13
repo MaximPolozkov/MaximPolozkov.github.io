@@ -72,11 +72,6 @@ document.head.appendChild(importCdn);
 
 
 
-        
-
-
-        
-
         const modal = document.getElementById("modal");
         const close = document.getElementById("close")
         const headerLogo = document.querySelector('.header__logo');
@@ -118,6 +113,51 @@ document.head.appendChild(importCdn);
                 location.reload();
             }
         }
+
+
+        
+        const nomodal = document.getElementById("no-modal");
+        const noclose = document.getElementById("no-close")
+        const noheaderLogo = document.querySelector('.header__logo');
+        
+        // Отображаем модальное окно и устанавливаем источник изображения
+        function nodisplayModal(img){
+
+            nomodal.style.display = "block";
+            noheaderLogo.style.display = "none";
+
+            const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+    var swiper = new Swiper('.modal__swiper', {
+        
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      },
+      
+      rewind: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
+      debugger: true,
+    });
+
+        }
+
+        
+
+         // Скрываем содержимое модального окна, если пользователь кликнул вне его
+        function nohideModal()
+        {  
+            if (event.target == noclose) {
+                nomodal.style.display = "none";
+                noheaderLogo.style.display = "block";
+                location.reload();
+            }
+        }
+
 
 
         const observer = new IntersectionObserver((entries) => {
